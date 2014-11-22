@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+		<link rel="stylesheet" type="text/css" href="css/estilo.css">
+		<link rel="stylesheet" type="text/css" href="css/af.ui.css" />
+		<link rel="stylesheet" type="text/css" href="css/icons.css"/>
+		<script type="text/javascript" charset="UTF-8" src="js/appframework.ui.min.js"></script>
+		<script type="text/javascript" src="js/index.js"></script>
+		<script type="text/javascript" src="cordova.js"></script>
+        <title>Cafeteria</title>
+    </head>
+    <body>
+        <div id="afui" class="bb">
+			<div id="content">
+				<!--Primera Vez-->
+				<div class="panel" id="prime" modal="true">
+					<div id="tipri">
+						<h1 class="icon warning big">!ATENCION¡</h1>
+					</div>
+					<div id="tino">
+						<h3>
+						Para que usted pueda acceder a la aplicación
+						debera registrarse.
+						</h3>
+					</div>
+						<div id="pay">
+							<img src="img/paypal.png" width="100%"/>
+						</div>
+						<div id="master">
+							<img src="img/master.png" width="100%"/>
+						</div>
+					<div id="centrar">
+						<a onclick="registro()" href="#registro"> Regístrate</a>
+					</div>
+				</div>				
+				<!--Panel Login-->
+				<div class="panel" id="Login" selected="true" title="FoodMatic">
+				<br />
+					<h1 id="centrar">Cuenta Cafeteria</h1>
+					<br>
+					<div id="login">
+						<h2 class="mar">Usuario:</h2>
+						<form name ="formTipo" class="mar">
+							<input name="motivo" type="text">
+						</form>
+						<h2 class="mar">Contraseña</h2>
+						<form name ="formTipo" class="mar">
+							<input name="motivo" type="text">
+						</form>
+						<form>
+							<input type="submit" onclick="pedi()" class="button blue" value="Iniciar sesión">
+						</form>
+						<br/>
+						<h4 id="diez">¿No dispones de una cuenta?
+							<a onclick="registro()" href="#registro"> Regístrate</a>
+							<a onclick="pedi()" href="#pedi"> pedido</a>
+							<a onclick="prime()" href="#prime"> primera</a>
+						</h4>
+					</div>
+				</div>
+				<!-- Panel Registro -->
+				<div class="panel" id="registro" title="FoodMatic">
+					<h2 id="centrar">Crear un cuenta</h2>
+					<div id="fondo">
+						<label class="mar" for="email">
+							Correo:<span class="required"></span></label>
+						<form class="mar">
+							<input type="email" name="email" id="email" value="" placeholder="ejemplo@eje.com" required="required"/><br>
+						</form>
+						<label class="mar">
+							Usuario:<span class="required"></span></label>
+						<form class="mar">
+							<input min="8" maxlength="16" type="email" name="email" id="email" value="" placeholder="Nombre" required="required"/><br>
+						</form>
+						<label class="mar" for="pass">
+							Crear una contraseña: <span class="required">*</span></label>	
+						<form class="mar">
+							<input type="password" name="pass" id="pass" required="required"><br/>
+						</form>
+						<label id="diez" for="pass">
+							Confirmar tu contraseña: <span class="required">*</span></label>
+						<form class="mar">
+							<input type="password" name="pass" id="pass" required="required"><br/>
+						</form>
+						<form>
+							<input type="submit" class="button blue" value="Crear cuenta">
+						</form>
+					</div>
+				</div>
+				<!-- Panel Pedidos-->
+				<div class="panel" id="pedi" title="FoodMatic">
+					<div id="fondo2">
+						<a id="cre" onclick="crea()" href="#crea">Crear Pedido</a>
+						<h4 id="use">Joan Carlo</h4>
+					</div>
+					<h2 id="centrar">Pedidos</h2>
+					<div id="fondo3">
+						<div id="siguiente" class="neg">
+						<div id="usuario">
+							<div>
+								<h4>Usuario: </h4>
+							</div>
+							<div>
+								<h4 >Hora: </h4>
+							</div>
+							<div>
+								<h4 >Total: </h4>
+							</div>
+						</div>	
+						<div id="idpedido">
+							<h4 >IdPedido: </h4>
+						</div>
+						
+					<a href="#pedMod" onclick="pedMod()">Modal</a>
+						</div>
+					</div>
+					<br />
+					<div id="orden" class="lista">
+							<ul>
+								<li><div id="fred"><label></label></div>En espera</li>
+								<li><div id="fyellow"><label></label></div>Procesando</li>
+								<li><div id="fgreen"><label></label></div>Listo</li>
+							</ul>
+						</div>
+				</div>
+				<!-- Panel Pedido Modal-->
+				<div class="panel" id="pedMod" title="Nombre del Usuario" modal="true">
+					<div id="dat">
+						<h4 >IdPedido: </h4>
+						<h4 >Hora de Pedido: </h4>
+						<h4 >Hora de Entrega: </h4>
+					</div>
+					<div id="dato">
+						<h4>--</h4>
+						<h4>--</h4>
+						<h4>--</h4>
+					</div>
+					<br />
+					<div id="produ">
+						<h2>Productos: </h2>
+						<div>
+							 <textarea id="frm_test1" rows="6" placeholder=""></textarea>
+						</div>
+					</div>
+					<div id="dat">
+						<h3>Total</h3>
+					</div>
+					<div id="dato">
+						<h3>-- --</h3>
+					</div>
+					
+				</div>
+				<!-- Panel Crear Pedido -->
+				<div class="panel" id="crea" title="FoodMatic">	
+					<div id="car">
+						
+					</div>
+					<div id="tien">
+						<div id="titu">
+							<h2>Menú</h2>
+						</div>
+						<div id="envi">
+							<input type="submit" value="Enviar"/>
+						</div>
+					</div>
+					<div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>	

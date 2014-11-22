@@ -1,0 +1,263 @@
+#regis{
+	display:block;
+	text-align:right;
+}
+
+#orden ul{
+	display:block;
+	list-style-type:none;
+}
+
+.orden > li a{
+	float:right;
+}
+
+.orden lu li{
+	margin-left;0 px;
+}
+
+.orden ul li a{
+	display:inline-block;
+	margin-right:10%;
+}
+
+#orden2 ul{
+	display:block;
+	list-style-type:none;
+}
+
+.orden2 > li a{
+	float:right;
+}
+
+.orden2 lu li{
+	margin-left;0 px;
+}
+
+#login{
+	display:block;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	background-color: #E0E0E0;
+	margin-left:10%;
+	margin-right:10%;
+	padding:0px 0px 30px 0px;
+}
+
+.mar{
+	margin-left:10%;
+	margin-right:10%;
+}
+
+.neg {
+	font-weight:bold;
+}
+
+#centrar{
+	text-align:center;
+}
+
+#diez{
+	margin-left:10%;
+}
+
+#afui .button.blue {
+	color:#fff;
+	text-shadow:0 -1px 0 #666;
+	background:blue;
+	border-color:#666;
+	margin-left:10%;
+}
+
+#fondo{
+	background-color:#E0E0E0;
+	display:block;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+}
+
+#fondo2{
+	display:block;
+}
+/*-------------------------- Primera vez ---------------------*/
+#tipri{
+	margin:3% auto;
+	text-align:center;
+	background-color:yellow;
+	border-radius:20px;
+}
+
+#tino{
+	text-align:center;
+	font-weight:justify;
+	width:80%;
+	border:3px solid blue;
+	margin:3% auto;;
+	
+}
+
+#pay{
+	display:block;
+	margin:1% 0 0 20% ;
+	float:left;
+	width:30%;
+	border:3px solid blue;
+}
+
+#master{
+	display:block;
+	float:left;
+	width:30%;
+	margin-top:1%;
+	border:3px solid blue;
+}
+
+#repri{
+	
+}
+
+/*-------------------------- Pedidos -------------------------*/
+#fondo3{
+	margin:0 auto;
+	width:95%;
+	height:350px;
+	background-image:url("../img/cafe.jpg");
+	display:block;
+	border-radius: 10px;
+	padding: 1% 1% 1% 3%;
+	
+}
+
+.lista {
+	display:block;
+	margin-left:10%;
+	padding:0px;
+	
+}
+
+#cre{
+	margin-left:0px;
+}
+
+#use{
+	float:right;
+}
+
+#siguiente{
+	background-color:rgba(255,0,0,.8);
+	display:inline-block;
+	border:1px solid black;
+	width:95%;
+	border-radius:20px 5px 20px 5px;
+	font-family:bold;
+	color:black;
+}
+#siguiente #usuario{
+	width:40%;
+	float:left;
+	margin-left:5%;
+}
+#siguiente  #idpedido{
+	float:left;
+	width:50%;
+}
+
+ #orden #fred{
+	background-color:red;
+	border:1px solid black;
+	display:inline-block;
+	vertical-align:top;
+}
+
+#orden #fyellow{
+	background-color:yellow;
+	border:1px solid black;
+	display:inline-block;
+	vertical-align:top;
+}
+
+#orden #fgreen{
+	background-color:green;
+	border:1px solid black;
+	display:inline-block;
+	vertical-align:top;
+}
+
+/*------------- Pedidos  Modal------------------*/
+
+#pedMod{
+	width:100%;
+}
+
+#dat{
+	display:block;
+	margin:3% 0 0 25% ;
+	float:left;
+	width:30%;
+}
+
+#dato{
+	display:block;
+	float:left;
+	width:30%;
+	text-align:center;
+	margin-top:3%;
+}
+
+#produ{
+	background-image:url("../img/caf.jpg");
+	text-align:center;
+	display:block;
+	width:80%;
+	float:left;
+	margin:5% 10% 5% 10%;
+	border-radius:20px;
+	background-color:rgba(255,255,255,.8);
+	border:1px solid blue;
+}
+
+/*---------------------- Crear Pedidos-------------------------*/
+#car{
+	height:200px;
+	width:80%;
+	margin:3% auto;
+	background-image:url(../img/caf.jpg);
+	border-radius:20px;
+}
+
+#tien{
+	display:block;
+	width:90%;
+	margin:3% auto;
+}
+
+#titu{
+	float:left;
+	margin-left:0px;
+	width:50%;
+	text-align:center;
+}
+
+#envi{
+	float:left;
+	margin-left:0px;
+	width:50%;
+	text-align:center;
+}
+
+/*---------------------- Modales -------------------------*/
+
+/*--------------- Postres ----------------*/
+
+
+/*--------------- Botanas ----------------*/
+
+/*--------------- Dulces ----------------*/
+
+/*--------------- Bebidas ----------------*/
+
+/*--------------- Desayuno ----------------*/
+
+/*--------------- Galletas ----------------*/
